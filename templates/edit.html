@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Edit Employee</h1>
+</header>
+
+<div class="container">
+    <form action="{{ url_for('edit', employee_id=employee.id) }}" method="POST">
+        <input type="text" name="name" value="{{ employee.name }}" placeholder="Name" required>
+        <input type="email" name="email" value="{{ employee.email }}" placeholder="Email" required>
+        <input type="text" name="position" value="{{ employee.position }}" placeholder="Position" required>
+        <input type="number" name="salary" value="{{ employee.salary }}" placeholder="Salary" required>
+        <input type="submit" value="Update Employee">
+    </form>
+</div>
+
+</body>
+</html>
