@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #2cd45f;
     color: white;
     padding: 20px;
     text-align: center;
@@ -49,7 +49,7 @@ table td {
 
 /* Links inside the table */
 a {
-    color: #4CAF50;
+    color: #1507cf;
     text-decoration: none;
 }
 

@@ -9,7 +9,7 @@ def get_db_connection():
         host="localhost",
         user="root",  # your MySQL username
         password="admin",  # your MySQL password
-        database="employee_manager"  # database name changed
+        database="employee_managers"  # database name changed
     )
 
 # Route to display all employees
@@ -78,4 +78,4 @@ def delete(employee_id):
 
 # Run the Flask app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0',port=5001)
